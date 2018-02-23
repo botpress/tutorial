@@ -1,0 +1,4 @@
+end game
+stop game
+cancel game
+stop playing
