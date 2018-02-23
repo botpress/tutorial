@@ -2,22 +2,14 @@
   "version": "0.1",
   "catchAll": {
     "onReceive": [],
-    "next": [
-      {
-        "condition": "event.nlu.intent.is('stop_game')",
-        "node": "stop-game"
-      }
-    ]
+    "next": []
   },
   "startNode": "entry",
   "nodes": [
     {
       "id": "rjamSg7LNJbzrEoftkYxQ",
       "name": "entry",
-      "onEnter": [
-        "startGame {}",
-        "say #!text-7jyHxa"
-      ],
+      "onEnter": ["startGame {}", "say #!text-7jyHxa"],
       "onReceive": null,
       "next": [
         {
@@ -39,12 +31,8 @@
           "node": "bad-answer"
         }
       ],
-      "onEnter": [
-        "sendRandomQuestion {}"
-      ],
-      "onReceive": [
-        "validateAnswer {}"
-      ]
+      "onEnter": ["sendRandomQuestion {}"],
+      "onReceive": ["validateAnswer {}"]
     },
     {
       "id": "8bfc3b60fd",
@@ -55,9 +43,7 @@
           "node": "next"
         }
       ],
-      "onEnter": [
-        "say #!text-~Y4F~Z"
-      ],
+      "onEnter": ["say #!text-~Y4F~Z"],
       "onReceive": null
     },
     {
@@ -69,9 +55,7 @@
           "node": "next"
         }
       ],
-      "onEnter": [
-        "say #!text-cTkerJ"
-      ],
+      "onEnter": ["say #!text-cTkerJ"],
       "onReceive": null
     },
     {
@@ -94,9 +78,7 @@
       "id": "25e5cd0fbe",
       "name": "over",
       "next": [],
-      "onEnter": [
-        "say #!text-zss1Nr"
-      ],
+      "onEnter": ["say #!text-zss1Nr"],
       "onReceive": null
     },
     {
@@ -108,9 +90,7 @@
           "node": "ask-question"
         }
       ],
-      "onEnter": [
-        "say #!text-kFIEdO"
-      ],
+      "onEnter": ["say #!text-kFIEdO"],
       "onReceive": null
     }
   ]
