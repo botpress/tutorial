@@ -9,14 +9,13 @@
       }
     ]
   },
-  "startNode": "node-4a03",
+  "startNode": "entry",
   "nodes": [
     {
       "id": "rjamSg7LNJbzrEoftkYxQ",
       "name": "entry",
       "onEnter": [
         "startGame {}",
-        "getUserTag {\"name\":\"nickname\",\"into\":\"nickname\"}",
         "say #!text-7jyHxa"
       ],
       "onReceive": null,
@@ -80,7 +79,7 @@
       "name": "next",
       "next": [
         {
-          "condition": "state.count >= 5",
+          "condition": "state.count >= 3",
           "node": "over"
         },
         {
@@ -94,18 +93,8 @@
     {
       "id": "25e5cd0fbe",
       "name": "over",
-      "next": [
-        {
-          "condition": "state.nickname == null",
-          "node": "ask-name"
-        },
-        {
-          "condition": "true",
-          "node": "leaderboard"
-        }
-      ],
+      "next": [],
       "onEnter": [
-        "endGame {}",
         "say #!text-zss1Nr"
       ],
       "onReceive": null
@@ -121,124 +110,6 @@
       ],
       "onEnter": [
         "say #!text-kFIEdO"
-      ],
-      "onReceive": null
-    },
-    {
-      "id": "4f1d323047",
-      "name": "ask-name",
-      "next": [
-        {
-          "condition": "true",
-          "node": "leaderboard"
-        }
-      ],
-      "onEnter": [
-        "say #!text-9zRAT8"
-      ],
-      "onReceive": [
-        "say #!text-5Iqpeb",
-        "setUserTag {\"name\":\"nickname\",\"value\":\"{{event.text}}\"}",
-        "getUserTag {\"name\":\"nickname\",\"into\":\"nickname\"}"
-      ]
-    },
-    {
-      "id": "ca5bd1e210",
-      "name": "leaderboard",
-      "next": [
-        {
-          "condition": "state.doesRanking",
-          "node": "congratulations"
-        },
-        {
-          "condition": "true",
-          "node": "dont-giveup"
-        }
-      ],
-      "onEnter": [
-        "amendLeaderboard {}"
-      ],
-      "onReceive": null
-    },
-    {
-      "id": "e4b20be4d0",
-      "name": "congratulations",
-      "next": [
-        {
-          "condition": "true",
-          "node": "leaderboard.flow.json"
-        }
-      ],
-      "onEnter": [
-        "say #!text-hqqI7u"
-      ],
-      "onReceive": null
-    },
-    {
-      "id": "2268a05815",
-      "name": "dont-giveup",
-      "next": [
-        {
-          "condition": "true",
-          "node": "leaderboard.flow.json"
-        }
-      ],
-      "onEnter": [
-        "say #!text-9GSBze"
-      ],
-      "onReceive": null
-    },
-    {
-      "id": "skill-193617",
-      "type": "skill-call",
-      "skill": "choice",
-      "name": "choice-193617",
-      "flow": "skills/choice-193617.flow.json",
-      "next": [
-        {
-          "caption": "User picked [Play]",
-          "condition": "state['skill-choice-ret'] == \"Play\"",
-          "node": "entry"
-        },
-        {
-          "condition": "state['skill-choice-ret'] == \"See leaderboard\"",
-          "node": "leaderboard.flow.json"
-        },
-        {
-          "caption": "On failure",
-          "condition": "true",
-          "node": "entry"
-        }
-      ],
-      "onEnter": null,
-      "onReceive": null
-    },
-    {
-      "id": "53b5de23e9",
-      "name": "node-4a03",
-      "next": [
-        {
-          "condition": "event.nlu.intent.is('leaderboard')",
-          "node": "leaderboard.flow.json"
-        },
-        {
-          "condition": "event.nlu.intent.is('play')",
-          "node": "entry"
-        },
-        {
-          "condition": "true",
-          "node": "choice-193617"
-        }
-      ],
-      "onEnter": [],
-      "onReceive": null
-    },
-    {
-      "id": "02a0e9c19b",
-      "name": "stop-game",
-      "next": [],
-      "onEnter": [
-        "say #!text-me0To9"
       ],
       "onReceive": null
     }

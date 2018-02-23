@@ -1,14 +1,11 @@
 const _ = require('lodash')
-const moment = require('moment')
 
 module.exports = {
   startGame: state => {
     return {
       ...state, // we clone the existing state
-      startTime: new Date(),
       count: 0, // we then reset the number of questions asked to `0`
       score: 0, // and we reset the score to `0`
-      doesRanking: false
     }
   },
 
@@ -28,48 +25,6 @@ module.exports = {
     }
   },
 
-  endGame: state => {
-    const totalTimeInMs = moment().diff(moment(state.startTime))
-    const totalScore = parseInt(state.score / totalTimeInMs * 1000 * 5000)
-
-    return {
-      ...state,
-      totalScore: totalScore
-    }
-  },
-
-  amendLeaderboard: async (state, event) => {
-    // Let's pull our existing leaderboard or create an empty board if it doesn't exist
-    let board = (await event.bp.db.kvs.get('leaderboard')) || []
-
-    board.push({
-      score: state.totalScore,
-      date: moment().format('dd MMM YYYY, hA'),
-      nickname: state.nickname
-    })
-
-    // Now let's take the top 5 only and re-save it
-    board = _.take(_.orderBy(board, ['score'], ['desc']), 5)
-    await event.bp.db.kvs.set('leaderboard', board)
-
-    // Are we in top 5? (i.e. are we in the array)
-    const doesRanking = !!_.find(board, {
-      score: state.totalScore,
-      nickname: state.nickname
-    })
-
-    return {
-      ...state,
-      leaderboard: board,
-      doesRanking: doesRanking
-    }
-  },
-
-  sendLeaderboard: async (state, event) => {
-    let board = (await event.bp.db.kvs.get('leaderboard')) || []
-    await event.reply('#leaderboard', { leaderboard: board })
-  },
-
   render: async (state, event, args) => {
     if (!args.renderer) {
       throw new Error('Missing "renderer"')
@@ -84,10 +39,6 @@ module.exports = {
   },
 
   /**
- * Sets user Tag.
- * @param {Object} state - The current state of the conversation.
- * @param {Object} event - The original (latest) event received from the user in the conversation.
- * @param {Object} args - The arguments that was passed to this action from the Visual Flow Builder.
  * @param {string} args.name - Name of the tag.
  * @param {string} args.value - Value of the tag.
  */

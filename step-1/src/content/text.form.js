@@ -13,14 +13,6 @@ module.exports = {
         type: 'string',
         title: 'Message'
       },
-      variations: {
-        type: 'array',
-        title: 'Alternates (optional)',
-        items: {
-          type: 'string',
-          default: ''
-        }
-      },
       typing: {
         type: 'boolean',
         title: 'Show typing indicators',
