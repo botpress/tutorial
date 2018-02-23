@@ -1,0 +1,170 @@
+[
+  {
+    "id": "text-7jyHxa",
+    "formData": {
+      "text": "Let the game begin! I'll ask you 5 questions",
+      "variations": [
+        "Alright let's play! I will ask you 5 questions"
+      ],
+      "typing": true,
+      "done": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-09T21:36:52.391Z"
+  },
+  {
+    "id": "text-~Y4F~Z",
+    "formData": {
+      "text": "You rock! That was the good answer",
+      "variations": [
+        "Boom! That was right",
+        "Spot on!"
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-12T21:59:56.693Z"
+  },
+  {
+    "id": "text-cTkerJ",
+    "formData": {
+      "text": "Nope, that wasn't the right answer 😅",
+      "variations": [
+        "Not quite right 😂",
+        "Oops! Unfortunately that's not the answer I expected"
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-12T22:00:55.757Z"
+  },
+  {
+    "id": "text-zss1Nr",
+    "formData": {
+      "text": "The game ended, you scored {{state.totalScore}}",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-12T22:03:04.736Z"
+  },
+  {
+    "id": "text-kFIEdO",
+    "formData": {
+      "text": "Let's see if you can answer this one...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-12T22:43:25.093Z"
+  },
+  {
+    "id": "text-JXrtrz",
+    "formData": {
+      "text": "This message will be sent when the node is entered",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-14T19:20:39.023Z"
+  },
+  {
+    "id": "text-Ao7~sp",
+    "formData": {
+      "text": "This one when the user replied",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-14T19:21:18.191Z"
+  },
+  {
+    "id": "text-q68ULB",
+    "formData": {
+      "text": "onEnter",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-14T20:27:58.368Z"
+  },
+  {
+    "id": "text-PmkEFV",
+    "formData": {
+      "text": "onReceive",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-14T20:30:18.283Z"
+  },
+  {
+    "id": "text-9zRAT8",
+    "formData": {
+      "text": "How shall I call you?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-14T23:50:09.971Z"
+  },
+  {
+    "id": "text-5Iqpeb",
+    "formData": {
+      "text": "Thanks, {{event.text}} is an original nickname!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-14T23:50:54.623Z"
+  },
+  {
+    "id": "text-hqqI7u",
+    "formData": {
+      "text": "Wow, congratulations!! You played one of the best 5 games ever played, you rank in the leaderboard!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-19T00:02:30.160Z"
+  },
+  {
+    "id": "text-9GSBze",
+    "formData": {
+      "text": "You didn't make the leaderboard this time, but don't give up!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-19T00:03:10.416Z"
+  },
+  {
+    "id": "text-czegv8",
+    "formData": {
+      "text": "Hello",
+      "variations": [
+        "Hey"
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-19T19:14:45.857Z"
+  },
+  {
+    "id": "text-wcBhLn",
+    "formData": {
+      "text": "Received",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-22T00:20:31.387Z"
+  },
+  {
+    "id": "text-me0To9",
+    "formData": {
+      "text": "OK, let's stop that game. Let me know when you want to play again!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-22T00:42:18.863Z"
+  },
+  {
+    "id": "text-eoKJpp",
+    "formData": {
+      "text": "Hello, GitHub!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-23T02:36:45.161Z"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "c694e56bff",
+      "name": "entry",
+      "onEnter": [
+        "sendLeaderboard {}"
+      ],
+      "onReceive": null,
+      "next": []
+    }
+  ]
+}

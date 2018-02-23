@@ -1,0 +1,25 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "Botpress tutorial",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">= 6.1 <= 8.9"
+  },
+  "dependencies": {
+    "botpress": "^2.0.1",
+    "botpress-nlu": "^0.1.0",
+    "botpress-platform-webchat": "^0.5.0",
+    "botpress-skill-choice": "./botpress-skill-choice-1.0.0-beta.1.tgz",
+    "jsdoc": "^3.5.5",
+    "jsdoc-api": "^4.0.2",
+    "lodash": "^4.17.5"
+  },
+  "scripts": {
+    "start": "botpress start",
+    "ghost-sync": "botpress ghost-sync",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Botpress, Inc.",
+  "license": "Botpress Proprietary License"
+}

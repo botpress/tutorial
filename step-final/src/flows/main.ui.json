@@ -1,0 +1,367 @@
+{
+  "nodes": [
+    {
+      "id": "rjamSg7LNJbzrEoftkYxQ",
+      "position": {
+        "x": 100,
+        "y": 100
+      }
+    },
+    {
+      "id": "4a2d137247",
+      "position": {
+        "x": 345,
+        "y": 270
+      }
+    },
+    {
+      "id": "8bfc3b60fd",
+      "position": {
+        "x": 655,
+        "y": 285
+      }
+    },
+    {
+      "id": "1f9ae3ab6f",
+      "position": {
+        "x": 655,
+        "y": 430
+      }
+    },
+    {
+      "id": "11219c5913",
+      "position": {
+        "x": 945,
+        "y": 395
+      }
+    },
+    {
+      "id": "25e5cd0fbe",
+      "position": {
+        "x": 1225,
+        "y": 390
+      }
+    },
+    {
+      "id": "001c3d992a",
+      "position": {
+        "x": 405,
+        "y": 45
+      }
+    },
+    {
+      "id": "4f1d323047",
+      "position": {
+        "x": 1540,
+        "y": 460
+      }
+    },
+    {
+      "id": "ca5bd1e210",
+      "position": {
+        "x": 1305,
+        "y": 740
+      }
+    },
+    {
+      "id": "e4b20be4d0",
+      "position": {
+        "x": 1640,
+        "y": 710
+      }
+    },
+    {
+      "id": "2268a05815",
+      "position": {
+        "x": 1645,
+        "y": 930
+      }
+    },
+    {
+      "id": "skill-193617",
+      "position": {
+        "x": -100,
+        "y": -140
+      }
+    },
+    {
+      "id": "53b5de23e9",
+      "position": {
+        "x": -225,
+        "y": -365
+      }
+    },
+    {
+      "id": "02a0e9c19b",
+      "position": {
+        "x": 245,
+        "y": -355
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "rjamSg7LNJbzrEoftkYxQ",
+      "sourcePort": "out0",
+      "target": "4a2d137247",
+      "points": [
+        {
+          "x": 307,
+          "y": 246
+        },
+        {
+          "x": 445,
+          "y": 264
+        }
+      ]
+    },
+    {
+      "source": "4a2d137247",
+      "sourcePort": "out0",
+      "target": "8bfc3b60fd",
+      "points": [
+        {
+          "x": 552,
+          "y": 354
+        },
+        {
+          "x": 755,
+          "y": 279
+        }
+      ]
+    },
+    {
+      "source": "4a2d137247",
+      "sourcePort": "out1",
+      "target": "1f9ae3ab6f",
+      "points": [
+        {
+          "x": 552,
+          "y": 379
+        },
+        {
+          "x": 755,
+          "y": 423
+        }
+      ]
+    },
+    {
+      "source": "8bfc3b60fd",
+      "sourcePort": "out0",
+      "target": "11219c5913",
+      "points": [
+        {
+          "x": 862,
+          "y": 363
+        },
+        {
+          "x": 1045,
+          "y": 389
+        }
+      ]
+    },
+    {
+      "source": "1f9ae3ab6f",
+      "sourcePort": "out0",
+      "target": "11219c5913",
+      "points": [
+        {
+          "x": 862,
+          "y": 508
+        },
+        {
+          "x": 1045,
+          "y": 389
+        }
+      ]
+    },
+    {
+      "source": "11219c5913",
+      "sourcePort": "out0",
+      "target": "25e5cd0fbe",
+      "points": [
+        {
+          "x": 1152,
+          "y": 431
+        },
+        {
+          "x": 1325,
+          "y": 383
+        }
+      ]
+    },
+    {
+      "source": "11219c5913",
+      "sourcePort": "out1",
+      "target": "001c3d992a",
+      "points": [
+        {
+          "x": 1152,
+          "y": 456
+        },
+        {
+          "x": 1150,
+          "y": 40
+        },
+        {
+          "x": 505,
+          "y": 39
+        }
+      ]
+    },
+    {
+      "source": "25e5cd0fbe",
+      "sourcePort": "out0",
+      "target": "4f1d323047",
+      "points": [
+        {
+          "x": 1431,
+          "y": 511
+        },
+        {
+          "x": 1640,
+          "y": 454
+        }
+      ]
+    },
+    {
+      "source": "25e5cd0fbe",
+      "sourcePort": "out1",
+      "target": "ca5bd1e210",
+      "points": [
+        {
+          "x": 1431,
+          "y": 536
+        },
+        {
+          "x": 1405,
+          "y": 733
+        }
+      ]
+    },
+    {
+      "source": "001c3d992a",
+      "sourcePort": "out0",
+      "target": "4a2d137247",
+      "points": [
+        {
+          "x": 611,
+          "y": 123
+        },
+        {
+          "x": 445,
+          "y": 264
+        }
+      ]
+    },
+    {
+      "source": "4f1d323047",
+      "sourcePort": "out0",
+      "target": "ca5bd1e210",
+      "points": [
+        {
+          "x": 1746,
+          "y": 648
+        },
+        {
+          "x": 1405,
+          "y": 733
+        }
+      ]
+    },
+    {
+      "source": "ca5bd1e210",
+      "sourcePort": "out0",
+      "target": "e4b20be4d0",
+      "points": [
+        {
+          "x": 1511,
+          "y": 800
+        },
+        {
+          "x": 1740,
+          "y": 704
+        }
+      ]
+    },
+    {
+      "source": "ca5bd1e210",
+      "sourcePort": "out1",
+      "target": "2268a05815",
+      "points": [
+        {
+          "x": 1511,
+          "y": 825
+        },
+        {
+          "x": 1745,
+          "y": 923
+        }
+      ]
+    },
+    {
+      "source": "skill-193617",
+      "sourcePort": "out0",
+      "target": "rjamSg7LNJbzrEoftkYxQ",
+      "points": [
+        {
+          "x": 107,
+          "y": -92
+        },
+        {
+          "x": 200,
+          "y": 94
+        }
+      ]
+    },
+    {
+      "source": "skill-193617",
+      "sourcePort": "out2",
+      "target": "rjamSg7LNJbzrEoftkYxQ",
+      "points": [
+        {
+          "x": 107,
+          "y": -23
+        },
+        {
+          "x": 200,
+          "y": 94
+        }
+      ]
+    },
+    {
+      "source": "53b5de23e9",
+      "sourcePort": "out1",
+      "target": "rjamSg7LNJbzrEoftkYxQ",
+      "points": [
+        {
+          "x": -19,
+          "y": -304
+        },
+        {
+          "x": 205,
+          "y": -305
+        },
+        {
+          "x": 200,
+          "y": 94
+        }
+      ]
+    },
+    {
+      "source": "53b5de23e9",
+      "sourcePort": "out2",
+      "target": "skill-193617",
+      "points": [
+        {
+          "x": -19,
+          "y": -279
+        },
+        {
+          "x": 0,
+          "y": -146
+        }
+      ]
+    }
+  ]
+}
