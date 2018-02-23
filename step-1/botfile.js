@@ -109,6 +109,13 @@ module.exports = {
     autoLoading: true
   },
 
+  config: {
+    'botpress-nlu': {
+      intentsDir: './src/intents',
+      entitiesDir: './src/entities'
+    }
+  },
+
   // **** Update this if you bought a Botpress license ****
   license: {
     // customerId: process.env.BOTPRESS_CUSTOMER_ID || 'your_customer_id_here',
