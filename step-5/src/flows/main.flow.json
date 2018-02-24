@@ -1,0 +1,213 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "choice-52b87e",
+  "nodes": [
+    {
+      "id": "rjamSg7LNJbzrEoftkYxQ",
+      "name": "entry",
+      "onEnter": [
+        "startGame {}",
+        "getUserTag {\"name\":\"nickname\",\"into\":\"nickname\"}",
+        "say #!text-7jyHxa"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-question"
+        }
+      ]
+    },
+    {
+      "id": "4a2d137247",
+      "name": "ask-question",
+      "next": [
+        {
+          "condition": "state.isCorrect === true",
+          "node": "good-answer"
+        },
+        {
+          "condition": "true",
+          "node": "bad-answer"
+        }
+      ],
+      "onEnter": [
+        "sendRandomQuestion {}"
+      ],
+      "onReceive": [
+        "validateAnswer {}"
+      ]
+    },
+    {
+      "id": "8bfc3b60fd",
+      "name": "good-answer",
+      "next": [
+        {
+          "condition": "true",
+          "node": "next"
+        }
+      ],
+      "onEnter": [
+        "say #!text-~Y4F~Z"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "1f9ae3ab6f",
+      "name": "bad-answer",
+      "next": [
+        {
+          "condition": "true",
+          "node": "next"
+        }
+      ],
+      "onEnter": [
+        "say #!text-cTkerJ"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "11219c5913",
+      "name": "next",
+      "next": [
+        {
+          "condition": "state.count >= 5",
+          "node": "over"
+        },
+        {
+          "condition": "true",
+          "node": "next-question"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "25e5cd0fbe",
+      "name": "over",
+      "next": [
+        {
+          "condition": "state.nickname == null",
+          "node": "ask-name"
+        },
+        {
+          "condition": "true",
+          "node": "leaderboard"
+        }
+      ],
+      "onEnter": [
+        "endGame {}",
+        "say #!text-zss1Nr"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "001c3d992a",
+      "name": "next-question",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-question"
+        }
+      ],
+      "onEnter": [
+        "say #!text-kFIEdO"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ffc58119cb",
+      "name": "ask-name",
+      "next": [
+        {
+          "condition": "true",
+          "node": "leaderboard"
+        }
+      ],
+      "onEnter": [
+        "say #!text-QJH1a4"
+      ],
+      "onReceive": [
+        "say #!text-FAFuYh",
+        "setUserTag {\"name\":\"nickname\",\"value\":\"{{event.text}}\"}",
+        "getUserTag {\"name\":\"nickname\",\"into\":\"nickname\"}"
+      ]
+    },
+    {
+      "id": "5e5c77dec8",
+      "name": "leaderboard",
+      "next": [
+        {
+          "condition": "state.doesRanking === true",
+          "node": "congratulations"
+        },
+        {
+          "condition": "true",
+          "node": "dont-giveup"
+        }
+      ],
+      "onEnter": [
+        "amendLeaderboard {}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ab3593485b",
+      "name": "congratulations",
+      "next": [
+        {
+          "condition": "true",
+          "node": "leaderboard.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!text-16cVgF"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d6b178c647",
+      "name": "dont-giveup",
+      "next": [
+        {
+          "condition": "true",
+          "node": "leaderboard.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!text-tRPySK"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-52b87e",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-52b87e",
+      "flow": "skills/choice-52b87e.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Play]",
+          "condition": "state['skill-choice-ret'] == \"Play\"",
+          "node": "entry"
+        },
+        {
+          "caption": "User picked [See lea...]",
+          "condition": "state['skill-choice-ret'] == \"See leaderboard\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}
