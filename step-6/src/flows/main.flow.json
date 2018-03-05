@@ -202,7 +202,7 @@
         {
           "caption": "On failure",
           "condition": "true",
-          "node": ""
+          "node": "entry"
         }
       ],
       "onEnter": null,

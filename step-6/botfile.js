@@ -110,7 +110,7 @@ module.exports = {
   },
 
   config: {
-    'botpress-nlu': {
+    '@botpress/nlu': {
       intentsDir: './src/intents',
       entitiesDir: './src/entities'
     }

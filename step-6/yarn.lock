@@ -2,6 +2,52 @@
 # yarn lockfile v1
 
 
+"@botpress/channel-messenger@^10.0.1":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@botpress/channel-messenger/-/channel-messenger-10.0.1.tgz#1a8b28955d5df600ee629698a0c023c9794f6108"
+  dependencies:
+    bluebird "^3.4.6"
+    body-parser "^1.15.2"
+    botpress-version-manager "^1.0.4"
+    eventemitter2 "^2.1.3"
+    lodash "^4.16.6"
+    lru-cache "^4.0.1"
+    node-fetch "^1.6.3"
+    react-audio-player "^0.9.0"
+    react-player "^1.1.2"
+    uuid "^3.0.0"
+
+"@botpress/channel-web@^10.0.8":
+  version "10.0.8"
+  resolved "https://registry.yarnpkg.com/@botpress/channel-web/-/channel-web-10.0.8.tgz#8ca94e32674501dcbf5c00d352bf1771be46ebd4"
+  dependencies:
+    aws-sdk "^2.108.0"
+    axios "^0.16.2"
+    date-fns "^1.28.5"
+    lodash "^4.17.4"
+    mime "^2.0.3"
+    moment "^2.18.1"
+    multer "^1.3.0"
+    multer-s3 "^2.7.0"
+    query-string "^5.0.1"
+    react-ga "^2.4.1"
+    serve-static "^1.12.3"
+    sillyname "^0.1.0"
+    uuid "^3.1.0"
+
+"@botpress/nlu@^10.0.1":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@botpress/nlu/-/nlu-10.0.1.tgz#58df35a8280c190c8a6882dafcfb83ec0068890f"
+  dependencies:
+    axios "^0.17.1"
+    bluebird "^3.5.1"
+    bluebird-retry "^0.11.0"
+    lodash "^4.17.4"
+    mkdirp "^0.5.1"
+    ms "^2.1.1"
+    nanoid "^1.0.1"
+    natural "^0.5.6"
+
 "@botpress/skill-choice@^10.0.3":
   version "10.0.3"
   resolved "https://registry.yarnpkg.com/@botpress/skill-choice/-/skill-choice-10.0.3.tgz#e928cec3ffbc2271253b2f6f317dc8c3f14f601d"
@@ -570,40 +616,16 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-botpress-nlu@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/botpress-nlu/-/botpress-nlu-0.1.0.tgz#11d33051ad42270b046e7a2f160373feee7aa115"
+botpress-version-manager@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/botpress-version-manager/-/botpress-version-manager-1.0.4.tgz#53b3a7ee842176bfbf76f75304a06bca87442ca5"
   dependencies:
-    axios "^0.17.1"
-    bluebird "^3.5.1"
-    bluebird-retry "^0.11.0"
-    lodash "^4.17.4"
-    mkdirp "^0.5.1"
-    ms "^2.1.1"
-    nanoid "^1.0.1"
-    natural "^0.5.6"
+    chalk "^1.1.3"
+    semver "^5.3.0"
 
-botpress-platform-webchat@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/botpress-platform-webchat/-/botpress-platform-webchat-0.5.0.tgz#2132b1620682e572be4b5de71a4bbb7a867baee8"
-  dependencies:
-    aws-sdk "^2.108.0"
-    axios "^0.16.2"
-    date-fns "^1.28.5"
-    lodash "^4.17.4"
-    mime "^2.0.3"
-    moment "^2.18.1"
-    multer "^1.3.0"
-    multer-s3 "^2.7.0"
-    query-string "^5.0.1"
-    react-ga "^2.4.1"
-    serve-static "^1.12.3"
-    sillyname "^0.1.0"
-    uuid "^3.1.0"
-
-botpress@^10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/botpress/-/botpress-10.0.1.tgz#16fce1484110581ca38889a5103696c3a690f0f7"
+botpress@^10.0.4:
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/botpress/-/botpress-10.0.4.tgz#1610d8238e4a0647e714eceead03f0902c7a4be5"
   dependencies:
     axios "^0.15.2"
     babel-polyfill "^6.23.0"
@@ -616,10 +638,12 @@ botpress@^10.0.1:
     eventemitter2 "^2.1.3"
     express "^4.14.0"
     glob "^7.1.2"
+    history "^4.7.2"
     howler "^2.0.3"
     js-yaml "^3.8.4"
     jsonwebtoken "^7.1.9"
     knex "^0.12.6"
+    loaders.css "^0.1.2"
     lodash "^4.16.4"
     mkdirp "^0.5.1"
     moment "^2.15.1"
@@ -639,6 +663,8 @@ botpress@^10.0.1:
     randomstring "^1.1.5"
     react-codemirror "^1.0.0"
     react-jsonschema-form "^1.0.0"
+    react-loaders "^3.0.1"
+    react-router-dom "^4.2.2"
     react-toastify "^3.3.3"
     socket.io "^1.5.0"
     socket.io-client "^2.0.3"
@@ -826,7 +852,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
+classnames@^2.2.3, classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -1083,6 +1109,10 @@ deep-equal@~0.2.1:
 deep-extend@~0.4.0:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.2.tgz#48b699c27e334bf89f10892be432f6e4c7d34a7f"
+
+deepmerge@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.0.1.tgz#25c1c24f110fb914f80001b925264dd77f3f4312"
 
 define-property@^0.2.5:
   version "0.2.5"
@@ -1812,6 +1842,16 @@ hawk@~6.0.2:
     hoek "4.x.x"
     sntp "2.x.x"
 
+history@^4.7.2:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
+  dependencies:
+    invariant "^2.2.1"
+    loose-envify "^1.2.0"
+    resolve-pathname "^2.2.0"
+    value-equal "^0.4.0"
+    warning "^3.0.0"
+
 hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
@@ -1819,6 +1859,10 @@ hoek@2.x.x:
 hoek@4.x.x:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.0.tgz#72d9d0754f7fe25ca2d01ad8f8f9a9449a89526d"
+
+hoist-non-react-statics@^2.3.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.0.tgz#d2ca2dfc19c5a91c5a6615ce8e564ef0347e2a40"
 
 homedir-polyfill@^1.0.0:
   version "1.0.1"
@@ -1916,6 +1960,12 @@ inline-style-prefixer@^3.0.6:
 interpret@^0.6.5:
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-0.6.6.tgz#fecd7a18e7ce5ca6abfb953e1f86213a49f1625b"
+
+invariant@^2.2.1, invariant@^2.2.2:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.3.tgz#1a827dfde7dcbd7c323f0ca826be8fa7c5e9d688"
+  dependencies:
+    loose-envify "^1.0.0"
 
 ipaddr.js@1.5.2:
   version "1.5.2"
@@ -2363,6 +2413,14 @@ liftoff@~2.2.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
+load-script@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
+
+loaders.css@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/loaders.css/-/loaders.css-0.1.2.tgz#3a9fb43726c73334a38142af9d0629019b658743"
+
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -2383,7 +2441,7 @@ lodash@3.x:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.0.0, lodash@^4.16.4, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.6.0:
+lodash@^4.0.0, lodash@^4.16.4, lodash@^4.16.6, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.6.0:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
@@ -2406,7 +2464,7 @@ log-utils@^0.2.1:
     time-stamp "^1.0.1"
     warning-symbol "^0.1.0"
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
   dependencies:
@@ -2684,7 +2742,7 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-node-fetch@^1.0.1:
+node-fetch@^1.0.1, node-fetch@^1.6.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
   dependencies:
@@ -2933,6 +2991,12 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
 
+path-to-regexp@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
+  dependencies:
+    isarray "0.0.1"
+
 pause-stream@0.0.11:
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/pause-stream/-/pause-stream-0.0.11.tgz#fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445"
@@ -3135,6 +3199,14 @@ prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+prop-types@^15.5.6:
+  version "15.6.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 proxy-addr@~2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.2.tgz#6571504f47bb988ec8180253f85dd7e14952bdec"
@@ -3229,6 +3301,12 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-audio-player@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/react-audio-player/-/react-audio-player-0.9.0.tgz#51daf4eb84fea59c1cd206b9d680555224c481d6"
+  dependencies:
+    prop-types "^15.5.8"
+
 react-codemirror@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-codemirror/-/react-codemirror-1.0.0.tgz#91467b53b1f5d80d916a2fd0b4c7adb85a9001ba"
@@ -3255,6 +3333,43 @@ react-jsonschema-form@^1.0.0:
     lodash.topath "^4.5.2"
     prop-types "^15.5.8"
     setimmediate "^1.0.5"
+
+react-loaders@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-loaders/-/react-loaders-3.0.1.tgz#963ad7adefe530b24b1ed13faf4645134cf09a0e"
+  dependencies:
+    classnames "^2.2.3"
+
+react-player@^1.1.2:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-player/-/react-player-1.2.1.tgz#67f7196b6783457cbaa678272b34fa42411dd153"
+  dependencies:
+    deepmerge "^2.0.1"
+    load-script "^1.0.0"
+    prop-types "^15.5.6"
+
+react-router-dom@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.2.2.tgz#c8a81df3adc58bba8a76782e946cbd4eae649b8d"
+  dependencies:
+    history "^4.7.2"
+    invariant "^2.2.2"
+    loose-envify "^1.3.1"
+    prop-types "^15.5.4"
+    react-router "^4.2.0"
+    warning "^3.0.0"
+
+react-router@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.2.0.tgz#61f7b3e3770daeb24062dae3eedef1b054155986"
+  dependencies:
+    history "^4.7.2"
+    hoist-non-react-statics "^2.3.0"
+    invariant "^2.2.2"
+    loose-envify "^1.3.1"
+    path-to-regexp "^1.7.0"
+    prop-types "^15.5.4"
+    warning "^3.0.0"
 
 react-toastify@^3.3.3:
   version "3.3.4"
@@ -3460,6 +3575,10 @@ resolve-dir@^0.1.0:
   dependencies:
     expand-tilde "^1.2.2"
     global-modules "^0.2.3"
+
+resolve-pathname@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-2.2.0.tgz#7e9ae21ed815fd63ab189adeee64dc831eefa879"
 
 resolve-url@^0.2.1:
   version "0.2.1"
@@ -4248,6 +4367,10 @@ v8flags@^2.0.2:
 valid-url@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/valid-url/-/valid-url-1.0.9.tgz#1c14479b40f1397a75782f115e4086447433a200"
+
+value-equal@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"
 
 vary@~1.1.2:
   version "1.1.2"
