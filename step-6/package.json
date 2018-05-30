@@ -4,7 +4,7 @@
   "description": "Botpress tutorial",
   "main": "src/index.js",
   "engines": {
-    "node": ">= 6.1 <= 8.9"
+    "node": ">= 6.1 < 9.0"
   },
   "dependencies": {
     "@botpress/channel-messenger": "^10.0.1",

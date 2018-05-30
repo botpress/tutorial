@@ -4,11 +4,11 @@
   "description": "Botpress tutorial",
   "main": "src/index.js",
   "engines": {
-    "node": ">= 6.1 <= 8.9"
+    "node": ">= 6.1 < 9.0"
   },
   "dependencies": {
-    "botpress": "^10.0.1",
-    "botpress-platform-webchat": "^0.5.0",
+    "@botpress/channel-web": "^10.0.8",
+    "botpress": "^10.0.4",
     "jsdoc-api": "^4.0.2",
     "lodash": "^4.17.5",
     "moment": "^2.20.1"
