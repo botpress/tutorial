@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@botpress/channel-web@^10.0.8":
-  version "10.11.1"
-  resolved "https://registry.yarnpkg.com/@botpress/channel-web/-/channel-web-10.11.1.tgz#7c2ec66e431395ddddc0bf98120f3bf175246341"
+"@botpress/channel-web@^10.11.1":
+  version "10.11.2"
+  resolved "https://registry.yarnpkg.com/@botpress/channel-web/-/channel-web-10.11.2.tgz#bd37bfe1da87f51efbb471c1f1e3b617c3538635"
   dependencies:
     aws-sdk "^2.108.0"
     axios "^0.16.2"
@@ -407,8 +407,8 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
 aws-sdk@^2.108.0:
-  version "2.248.1"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.248.1.tgz#a6b65d3a1ef9cdc774b0cf9c552af997d2342c03"
+  version "2.249.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.249.1.tgz#29e9ef35afb14ce0e91f9905b33ed354417b965b"
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -562,9 +562,9 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-botpress@^10.0.0:
-  version "10.11.1"
-  resolved "https://registry.yarnpkg.com/botpress/-/botpress-10.11.1.tgz#74865eb8eb17aa5341786b6da6c6ad90bbd7b890"
+botpress@^10.11.1:
+  version "10.11.2"
+  resolved "https://registry.yarnpkg.com/botpress/-/botpress-10.11.2.tgz#f809be1eee1b143e242e964d8e863ee7998867f3"
   dependencies:
     axios "^0.15.2"
     babel-polyfill "^6.23.0"

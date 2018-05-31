@@ -15,7 +15,7 @@ module.exports = bp => {
   })
 
   jsdoc.explain({ files: [__dirname + '/actions.js'] }).then(docs => {
-    bp.dialogEngine.setFunctionMetadataProvider(fnName => {
+    bp.dialogEngine.registerActionMetadataProvider(fnName => {
       const meta = docs.find(({ name }) => name === fnName)
       return {
         desciption: meta.description,
