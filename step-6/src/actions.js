@@ -79,14 +79,14 @@ module.exports = {
   },
 
   validateAnswer: (state, event) => {
-    const isCorrect = event.text === state.goodAnswer.text
-    return { ...state, isCorrect: isCorrect, score: isCorrect ? state.score + 1 : state.score }
+    const isCorrect = state.goodAnswer && event.text === state.goodAnswer.text
+    return { ...state, isCorrect, score: isCorrect ? state.score + 1 : state.score }
   },
 
   /**
- * @param {string} args.name - Name of the tag.
- * @param {string} args.value - Value of the tag.
- */
+   * @param {string} args.name - Name of the tag.
+   * @param {string} args.value - Value of the tag.
+   */
   setUserTag: async (state, event, { name, value }) => {
     await event.bp.users.tag(event.user.id, name, value)
     return { ...state }
