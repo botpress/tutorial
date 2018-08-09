@@ -3,6 +3,7 @@ const port = process.env.BOTPRESS_PORT || process.env.PORT || 3000
 const botUrl = isProd ? 'https://my-host.com' : 'http://localhost:' + port
 
 module.exports = {
+  version: '10.31.0',
   /*
     Where the content is stored
     You can access this property from `bp.dataLocation`

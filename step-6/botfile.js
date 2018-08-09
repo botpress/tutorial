@@ -3,6 +3,7 @@ const port = process.env.BOTPRESS_PORT || process.env.PORT || 3000
 const botUrl = isProd ? 'https://my-host.com' : 'http://localhost:' + port
 
 module.exports = {
+  version: '10.31.0',
   /*
     Where the content is stored
     You can access this property from `bp.dataLocation`
@@ -40,12 +41,11 @@ module.exports = {
   contentDataDir: './src/content_data',
 
   /*
-    By default logs are enabled and available in `dataDir`
-   */
-  disableFileLogs: false,
-  log: {
-    file: 'bot.log',
-    maxSize: 1e6 // 1mb
+    By default logs are enabled and stored in the DB for 30 days
+  */
+  logs: {
+    enabled: true,
+    keepDays: 30
   },
 
   /*
