@@ -4,14 +4,14 @@
   "description": "Botpress tutorial",
   "main": "src/index.js",
   "engines": {
-    "node": ">= 6.1 < 9.0"
+    "node": ">= 6.1 < 11.0"
   },
   "dependencies": {
-    "@botpress/channel-messenger": "^10.11.1",
-    "@botpress/channel-web": "^10.11.1",
-    "@botpress/nlu": "^10.11.1",
-    "@botpress/skill-choice": "^10.11.1",
-    "botpress": "^10.11.1",
+    "@botpress/channel-messenger": "^10.31.0",
+    "@botpress/channel-web": "^10.31.0",
+    "@botpress/nlu": "^10.31.0",
+    "@botpress/skill-choice": "^10.31.0",
+    "botpress": "^10.31.0",
     "jsdoc-api": "^4.0.2",
     "lodash": "^4.17.5",
     "moment": "^2.20.1"
